@@ -1,0 +1,6 @@
+24. Launch a rabbitmq SERVICE that will be named orbital-command. You should
+define a specific user and password for the RabbitMQ service, they can be whatever
+you want. This service will be on the overmind network.
+
+
+docker service create -d --network overmind --name orbital-command -e RABBITMQ_DEFAULT_USER=maria -e RABBITMQ_DEFAULT_PASS=maria123 rabbitmq
